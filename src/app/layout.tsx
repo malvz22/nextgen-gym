@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Bebas_Neue } from "next/font/google";
+import { Bebas_Neue, Poppins } from "next/font/google";
+import Navbar from "./components/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,6 +18,10 @@ const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
   weight: "400",
 });
+const poppins = Poppins({
+  weight: "300",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "NextGen Gym",
@@ -31,8 +36,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.className} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.className} ${poppins.className} antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
