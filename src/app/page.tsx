@@ -56,6 +56,42 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="w-full max-w-full bg-[url('/experience-bg.jpg')] bg-cover bg-top">
+        <div className="bg-black/85 mix-blend-normal">
+          <div className="custom-container flex flex-col-reverse lg:flex-row justify-between items-center gap-20">
+            <div className="flex flex-col justify-start text-center lg:text-start w-full max-w-[600px]">
+              <h1 className="text-[91px] leading-[96px] pb-8">
+                WE HAVE A LOT OF <span>EXPERIENCE</span>
+              </h1>
+              <p className="pb-8">
+                With a history of helping individuals of all fitness levels,
+                we’ve built a reputation for excellence and trust within our
+                community. At NextGen Gym, our experience translates into
+                results that inspire and transform lives.
+              </p>
+              <p>
+                Experience matters when it comes to fitness, and we’ve got
+                plenty of it. Our team of certified trainers has spent years
+                empowering people like you to crush their goals, one rep at a
+                time. No matter where you start, we’re here to guide you toward
+                a healthier, stronger future.
+              </p>
+            </div>
+            <div className="relative w-[330px] h-[450px] ">
+              <Image
+                src={"/gym-experience.jpg"}
+                fill
+                objectFit="contain"
+                alt="Experience"
+                className="z-50"
+              />
+              <div className="absolute w-[330px] h-[450px] border-solid border-2 -translate-x-1/2 -translate-y-1/2 border-white left-[35%] top-[45%]"></div>
+              <div className="absolute w-[330px] h-[450px] border-solid border-2 -translate-x-1/2 -translate-y-1/2 border-red-700 left-[65%] top-[60%]"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
