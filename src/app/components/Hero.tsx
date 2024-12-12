@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="w-full max-w-full relative h-[1024px] flex flex-row justify-center items-start">
         <Image src={"/gym-hero.jpg"} fill objectFit="cover" alt="Hero Image" />
 
-        <div className="absolute w-full max-w-[1240px] px-20 left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col justify-start">
+        <div className="absolute w-full max-w-[1240px] px-20 left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center text-center lg:text-start lg:justify-start lg:items-start">
           <div className="w-full max-w-[600px]">
             <h1 className="text-[122px] leading-[136px]">
               READY TO TRAIN <span>YOUR BODY</span>
