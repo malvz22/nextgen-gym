@@ -1,5 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import Hero from "./components/Hero";
+import TrainerSlider from "./components/TrainerSlider";
 
 export default function Home() {
   return (
@@ -91,6 +93,18 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="custom-container flex flex-col justify-center items-center text-center">
+        <h1 className="text-[91px] leading-[96px] pb-8">
+          OUR PROFESSIONAL <span>TRAINERS</span>
+        </h1>
+        <p className="w-full max-w-[570px] text-center mb-20">
+          At NextGen Gym, our trainers are more than just fitness experts,
+          they're your partners in health and wellness. They're here to inspire,
+          motivatem and support you, no matter where you are in your fitness
+          journey. Join us and become the part of our fitness family!
+        </p>
+        <TrainerSlider />
       </div>
     </>
   );

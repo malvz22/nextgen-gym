@@ -30,7 +30,7 @@ h1 span {
 }
 
 .custom-container {
-  @apply w-full max-w-[1240px] mx-auto px-8 py-10;
+  @apply w-full max-w-[1240px] mx-auto px-8 py-14;
 }
 
 /* :root {

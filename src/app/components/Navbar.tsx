@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <>
       <div
-        className={`flex flex-col w-full max-w-[full] justify-center items-center px-24 py-5 sticky top-0 z-50 transition-colors duration-700 ${
+        className={`flex flex-col w-full max-w-[full] justify-center items-center px-24 py-5 fixed top-0 z-[100] transition-colors duration-700 ${
           scrolled ? "bg-[#121212]" : "bg-transparent"
         }`}
       >
