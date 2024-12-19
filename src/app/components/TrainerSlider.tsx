@@ -5,11 +5,31 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
 import Image from "next/image";
+import "../globals.css";
 
-// interface Trainer{
-//     name: string;
-//     imageSrc: string;
-// }
+interface Trainer {
+  name: string;
+  imageSrc: string;
+}
+
+const trainers: Trainer[] = [
+  {
+    name: "ALEX CARTER",
+    imageSrc: "alex-carter.jpg",
+  },
+  {
+    name: "JORDAN TAYLOR",
+    imageSrc: "jordan-taylor.jpg",
+  },
+  {
+    name: "AVERY PARKER",
+    imageSrc: "avery-parker.jpg",
+  },
+  {
+    name: "JAMIE HUNTER",
+    imageSrc: "jamie-hunter.jpg",
+  },
+];
 
 export default function TrainerSlider() {
   const settings = {
@@ -37,41 +57,32 @@ export default function TrainerSlider() {
     ],
   };
   return (
-    <div className="w-full max-w-full">
+    <div className="w-full max-w-full ">
       <Slider {...settings}>
-        <div className="mx-3">
-          <div
-            className={`bg-[url('/trainer/alex-carter.jpg')] mx-3 bg-top bg-cover border-solid border-[#ff0000] border-2 flex flex-col justify-center`}
-          >
-            <div className="flex flex-col bg-black/60 justify-center items-center p-4 mt-[400px]">
-              <h1 className="text-[38px]">ALEX CARTER</h1>
-              <p>Rate:</p>
-              <Image src={"/5 star.png"} width={130} height={0} alt="5 star" />
+        {trainers.map((trainer, index) => (
+          <div key={index} className="flex justify-center items-center px-4">
+            <div
+              className={`w-full max-w-full h-[450px] border-solid border-[#ff0000] border relative overflow-hidden`}
+            >
+              <Image
+                src={`/trainer/${trainer.imageSrc}`}
+                fill
+                alt="test"
+                objectFit="cover"
+              />
+              <div className="absolute bottom-0 left-0 flex flex-col bg-black/60 justify-center items-center w-full max-w-full py-4">
+                <h1 className="text-[38px]">{trainer.name}</h1>
+                <p>Rate:</p>
+                <Image
+                  src={"/5 star.png"}
+                  width={130}
+                  height={0}
+                  alt="5 star"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="mx-3">
-          <div
-            className={`bg-[url('/trainer/alex-carter.jpg')] mx-3 bg-top bg-cover border-solid border-[#ff0000] border-2 flex flex-col justify-center`}
-          >
-            <div className="flex flex-col bg-black/60 justify-center items-center p-4 mt-[400px]">
-              <h1 className="text-[38px]">ALEX CARTER</h1>
-              <p>Rate:</p>
-              <Image src={"/5 star.png"} width={130} height={0} alt="5 star" />
-            </div>
-          </div>
-        </div>
-        <div className="mx-3">
-          <div
-            className={`bg-[url('/trainer/alex-carter.jpg')] mx-3 bg-top bg-cover border-solid border-[#ff0000] border-2 flex flex-col justify-center`}
-          >
-            <div className="flex flex-col bg-black/60 justify-center items-center p-4 mt-[400px]">
-              <h1 className="text-[38px]">ALEX CARTER</h1>
-              <p>Rate:</p>
-              <Image src={"/5 star.png"} width={130} height={0} alt="5 star" />
-            </div>
-          </div>
-        </div>
+        ))}
       </Slider>
     </div>
   );

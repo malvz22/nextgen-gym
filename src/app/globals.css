@@ -33,6 +33,18 @@ h1 span {
   @apply w-full max-w-[1240px] mx-auto px-8 py-14;
 }
 
+.slick-dots li {
+  margin: 0 1px;
+}
+
+.slick-dots li button:before {
+  @apply text-[#a5a5a5]; /* Default dot color */
+}
+
+.slick-dots li.slick-active button:before {
+  @apply text-[#FF0000]; /* Active dot color */
+}
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
