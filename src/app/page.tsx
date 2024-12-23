@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Hero from "./components/Hero";
 import TrainerSlider from "./components/TrainerSlider";
+import TestimonySlider from "./components/TestimonySlider";
 
 export default function Home() {
   return (
@@ -105,6 +106,16 @@ export default function Home() {
           journey. Join us and become the part of our fitness family!
         </p>
         <TrainerSlider />
+      </div>
+      <div className="w-full max-w-full bg-[url('/experience-bg.jpg')] bg-cover bg-top">
+        <div className="bg-black/85 mix-blend-normal">
+          <div className="custom-container flex flex-col justify-center items-center gap-20">
+            <h1 className="text-[91px] leading-[96px] pb-8 text-center">
+              REAL <span>STORIES</span>, REAL <span>RESULTS</span>
+            </h1>
+            <TestimonySlider />
+          </div>
+        </div>
       </div>
     </>
   );
