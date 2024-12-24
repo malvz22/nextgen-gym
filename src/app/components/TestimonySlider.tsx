@@ -18,33 +18,45 @@ const testimonies: Testimony[] = [
     testimony:
       "Joining this gym has been life-changing! The trainers are incredibly supportive, and the equipment is top-notch. I've never felt stronger or healthier",
     name: "CHRIS M.",
-    imageSrc: "alex-carter.jpg",
+    imageSrc: "chris (2).jpg",
   },
   {
     testimony:
       "The personal training sessions are amazing! My coach helped me reach my fitness goals faster than I ever thought possible.",
     name: "samantha t.",
-    imageSrc: "alex-carter.jpg",
+    imageSrc: "samantha.jpg",
   },
   {
     testimony:
       "I love the group classes here! The energy is so motivating, and the instructors always push us to do our best. Highly recommend!",
     name: "Alex R.",
-    imageSrc: "alex-carter.jpg",
+    imageSrc: "alex-r.jpg",
   },
   {
     testimony:
       "This gym has everything—state-of-the-art equipment, clean facilities, and a welcoming community. It's the best fitness experience I've had!",
     name: "Jordan L.",
-    imageSrc: "alex-carter.jpg",
+    imageSrc: "jordan.jpg",
   },
   {
     testimony:
       "The nutrition counseling program has been a game-changer for me. I finally understand how to eat right for my goals. Thank you!",
     name: "Taylor S.",
-    imageSrc: "alex-carter.jpg",
+    imageSrc: "taylor.jpg",
+  },
+  {
+    testimony:
+      "The trainers here genuinely care about your progress. They always go the extra mile to ensure you stay motivated.",
+    name: "Casey W.",
+    imageSrc: "casey.jpg",
   },
 ];
+
+// const NextArrow = ({onclick}) => {
+//   return(
+
+//   )
+// }
 
 export default function TestimonySlider() {
   const settings = {
