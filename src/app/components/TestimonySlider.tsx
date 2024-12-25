@@ -6,12 +6,17 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
 import "../globals.css";
+import { MouseEventHandler } from "react";
 
 interface Testimony {
   testimony: string;
   name: string;
   imageSrc: string;
 }
+
+// type ButtonProps = {
+//   onClick: () => void;
+// };
 
 const testimonies: Testimony[] = [
   {
@@ -52,19 +57,37 @@ const testimonies: Testimony[] = [
   },
 ];
 
-// const NextArrow = ({onclick}) => {
-//   return(
+const NextArrow = ({ onClick }: { onClick?: MouseEventHandler }) => {
+  return (
+    <div
+      className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 p-2 cursor-pointer"
+      onClick={onClick}
+    >
+      <Image src={"/nextArrow.png"} width={20} height={40} alt=" " />
+    </div>
+  );
+};
 
-//   )
-// }
+const PrevArrow = ({ onClick }: { onClick?: MouseEventHandler }) => {
+  return (
+    <div
+      className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 p-2 cursor-pointer"
+      onClick={onClick}
+    >
+      <Image src={"/prevArrow.png"} width={20} height={40} alt=" " />
+    </div>
+  );
+};
 
 export default function TestimonySlider() {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
   return (
     <div className="w-full max-w-full mx-auto relative justify-center items-center">

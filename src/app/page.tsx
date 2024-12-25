@@ -107,8 +107,8 @@ export default function Home() {
         </p>
         <TrainerSlider />
       </div>
-      <div className="w-full max-w-full bg-[url('/experience-bg.jpg')] bg-cover bg-top">
-        <div className="bg-black/85 mix-blend-normal">
+      <div className="w-full max-w-full bg-[url('/testimony-bg.jpg')] bg-cover bg-top">
+        <div className="bg-black/90 mix-blend-normal">
           <div className="custom-container flex flex-col justify-center items-center gap-20">
             <h1 className="text-[91px] leading-[96px] pb-8 text-center">
               REAL <span>STORIES</span>, REAL <span>RESULTS</span>
