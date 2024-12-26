@@ -106,7 +106,7 @@ export default function TestimonySlider() {
               className="mx-auto mb-10"
             />
             <h1 className="text-[38px] mb-4">{testimony.name}</h1>
-            <div className="w-[180px] h-[180px] relative border-solid border-2 border-[#ff0000] mx-auto">
+            <div className="w-[120px] h-[120px] relative border-solid border-2 border-[#ff0000] mx-auto">
               <Image
                 src={`/testimony/${testimony.imageSrc}`}
                 fill

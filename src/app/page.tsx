@@ -117,6 +117,38 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="custom-container flex flex-col justify-center items-center text-center">
+        <h1 className="text-[91px] leading-[96px]">
+          LET'S START GYM <span>TRAINING NOW</span>
+        </h1>
+        <p>
+          Get 50% off the first three classes you sign up for this month any GYM
+          membership
+        </p>
+        <form className="w-full max-w-[480px] grid grid-cols-2 gap-6">
+          <input
+            type="text"
+            id="name"
+            className="bg-black p-4 border-solid border-white border-[1px] text-white placeholder-white col-span 1"
+            placeholder="Name"
+          />
+          <input
+            type="tel"
+            id="phone-number"
+            className="bg-black p-4 border-solid border-white border-[1px] text-white placeholder-white col-span-1"
+            placeholder="Phone Number"
+          />
+          <input
+            type="email"
+            id="phone-number"
+            className="bg-black p-4 border-solid border-white border-[1px] text-white placeholder-white col-span-2"
+            placeholder="Email"
+          />
+          <button className="py-4 w-[180px] border-solid border-[#ff0000] border-[1px] text-[#ff0000]">
+            Join Now
+          </button>
+        </form>
+      </div>
     </>
   );
 }
