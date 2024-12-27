@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
@@ -33,25 +34,33 @@ export default function Navbar() {
           </h1>
           {/* Desktop Menu */}
           <div className="hidden lg:flex flex-row gap-10 text-[21px] text-white">
-            <h1 className="hover:text-[#ff0000] transition-all duration-900">
-              HOME
-            </h1>
-            <h1 className="hover:text-[#ff0000] transition-all duration-900">
-              SERVICE
-            </h1>
-            <h1 className="hover:text-[#ff0000] transition-all duration-900">
-              TRAINERS
-            </h1>
-            <h1 className="hover:text-[#ff0000] transition-all duration-900">
-              TESTIMONIAL
-            </h1>
-            <h1 className="hover:text-[#ff0000] transition-all duration-900">
-              CONTACT US
-            </h1>
+            <Link href="#">
+              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+                HOME
+              </h1>
+            </Link>
+            <Link href={"#service-section"}>
+              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+                SERVICE
+              </h1>
+            </Link>
+            <Link href={"#trainers-section"}>
+              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+                TRAINERS
+              </h1>
+            </Link>
+            <Link href={"#testimony-section"}>
+              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+                TESTIMONIAL
+              </h1>
+            </Link>
           </div>
-          <h1 className="hidden lg:flex text-[21px] px-7 py-2 bg-[#ff0000] hover:bg-white hover:text-[#ff0000] transition-all duration-900">
-            START NOW
-          </h1>
+          <Link href={"#register-section"}>
+            <h1 className="hidden lg:flex text-[21px] px-7 py-2 bg-[#ff0000] hover:bg-white hover:text-[#ff0000] transition-all duration-900">
+              START NOW
+            </h1>
+          </Link>
+
           <RxHamburgerMenu
             onClick={handleOpen}
             size={30}
@@ -65,21 +74,31 @@ export default function Navbar() {
               : "hidden"
           }
         >
-          <h1 className="hover:text-[#ff0000] transition-all duration-900">
-            HOME
-          </h1>
-          <h1 className="hover:text-[#ff0000] transition-all duration-900">
-            SERVICE
-          </h1>
-          <h1 className="hover:text-[#ff0000] transition-all duration-900">
-            TRAINERS
-          </h1>
-          <h1 className="hover:text-[#ff0000] transition-all duration-900">
-            TESTIMONIAL
-          </h1>
-          <h1 className="hover:text-[#ff0000] transition-all duration-900">
-            CONTACT US
-          </h1>
+          <Link href="#">
+            <h1 className="hover:text-[#ff0000] transition-all duration-900">
+              HOME
+            </h1>
+          </Link>
+          <Link href={"#service-section"}>
+            <h1 className="hover:text-[#ff0000] transition-all duration-900">
+              SERVICE
+            </h1>
+          </Link>
+          <Link href={"#trainers-section"}>
+            <h1 className="hover:text-[#ff0000] transition-all duration-900">
+              TRAINERS
+            </h1>
+          </Link>
+          <Link href={"#testimony-section"}>
+            <h1 className="hover:text-[#ff0000] transition-all duration-900">
+              TESTIMONIAL
+            </h1>
+          </Link>
+          <Link href={"#register-section"}>
+            <h1 className="hover:text-[#ff0000] transition-all duration-900">
+              START NOW
+            </h1>
+          </Link>
         </div>
       </div>
     </>

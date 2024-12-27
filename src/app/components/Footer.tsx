@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <>
@@ -7,18 +9,26 @@ export default function Footer() {
             NEXTGEN<span>GYM</span>
           </h1>
           <div className="flex flex-row gap-10 text-[21px] text-white">
-            <h1 className="hover:text-[#ff0000] transition-all duration-900">
-              HOME
-            </h1>
-            <h1 className="hover:text-[#ff0000] transition-all duration-900">
-              SERVICE
-            </h1>
-            <h1 className="hover:text-[#ff0000] transition-all duration-900">
-              TRAINERS
-            </h1>
-            <h1 className="hover:text-[#ff0000] transition-all duration-900">
-              TESTIMONIAL
-            </h1>
+            <Link href="#">
+              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+                HOME
+              </h1>
+            </Link>
+            <Link href={"#service-section"}>
+              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+                SERVICE
+              </h1>
+            </Link>
+            <Link href={"#trainers-section"}>
+              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+                TRAINERS
+              </h1>
+            </Link>
+            <Link href={"#testimony-section"}>
+              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+                TESTIMONIAL
+              </h1>
+            </Link>
           </div>
         </div>
         <hr className="border-solid border-[1px] border-[#484848] w-full max-w-full" />

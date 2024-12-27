@@ -7,8 +7,13 @@ import TestimonySlider from "./components/TestimonySlider";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <div className="custom-container flex flex-col justify-center items-center">
+      <section id="hero-section">
+        <Hero />
+      </section>
+      <section
+        id="service-section"
+        className="custom-container flex flex-col justify-center items-center"
+      >
         <h1 className="text-[91px]">
           WHY <span>CHOOSE US</span>
         </h1>
@@ -58,9 +63,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
-
-      <div className="w-full max-w-full bg-[url('/experience-bg.jpg')] bg-cover bg-top">
+      </section>
+      <section className="w-full max-w-full bg-[url('/experience-bg.jpg')] bg-cover bg-top">
         <div className="bg-black/85 mix-blend-normal">
           <div className="custom-container flex flex-col-reverse lg:flex-row justify-between items-center gap-20">
             <div className="flex flex-col justify-start text-center lg:text-start w-full max-w-[600px]">
@@ -94,8 +98,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="custom-container flex flex-col justify-center items-center text-center">
+      </section>
+      <section
+        id="trainers-section"
+        className="custom-container flex flex-col justify-center items-center text-center"
+      >
         <h1 className="text-[91px] leading-[96px] pb-8">
           OUR PROFESSIONAL <span>TRAINERS</span>
         </h1>
@@ -106,8 +113,11 @@ export default function Home() {
           journey. Join us and become the part of our fitness family!
         </p>
         <TrainerSlider />
-      </div>
-      <div className="w-full max-w-full bg-[url('/testimony-bg.jpg')] bg-cover bg-top">
+      </section>
+      <section
+        id="testimony-section"
+        className="w-full max-w-full bg-[url('/testimony-bg.jpg')] bg-cover bg-top"
+      >
         <div className="bg-black/90 mix-blend-normal">
           <div className="custom-container flex flex-col justify-center items-center gap-20">
             <h1 className="text-[91px] leading-[96px] pb-8 text-center">
@@ -116,8 +126,11 @@ export default function Home() {
             <TestimonySlider />
           </div>
         </div>
-      </div>
-      <div className="custom-container flex flex-col justify-center items-center text-center">
+      </section>
+      <section
+        id="register-section"
+        className="custom-container flex flex-col justify-center items-center text-center"
+      >
         <h1 className="text-[91px] leading-[96px]">
           LET'S START GYM <span>TRAINING NOW</span>
         </h1>
@@ -148,7 +161,7 @@ export default function Home() {
             Join Now
           </button>
         </form>
-      </div>
+      </section>
     </>
   );
 }
