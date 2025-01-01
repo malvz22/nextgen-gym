@@ -3,6 +3,7 @@ import Image from "next/image";
 import Hero from "./components/Hero";
 import TrainerSlider from "./components/TrainerSlider";
 import TestimonySlider from "./components/TestimonySlider";
+import MemberForm from "./components/MemberForm";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       </section>
       <section
         id="service-section"
-        className="custom-container flex flex-col justify-center items-center"
+        className="custom-container flex flex-col justify-center items-center scroll-mt-[88px]"
       >
         <h1 className="text-[91px]">
           WHY <span>CHOOSE US</span>
@@ -101,7 +102,7 @@ export default function Home() {
       </section>
       <section
         id="trainers-section"
-        className="custom-container flex flex-col justify-center items-center text-center"
+        className="custom-container flex flex-col justify-center items-center text-center scroll-mt-[87px]"
       >
         <h1 className="text-[91px] leading-[96px] pb-8">
           OUR PROFESSIONAL <span>TRAINERS</span>
@@ -116,7 +117,7 @@ export default function Home() {
       </section>
       <section
         id="testimony-section"
-        className="w-full max-w-full bg-[url('/testimony-bg.jpg')] bg-cover bg-top"
+        className="w-full max-w-full bg-[url('/testimony-bg.jpg')] bg-cover bg-top scroll-mt-[88px]"
       >
         <div className="bg-black/90 mix-blend-normal">
           <div className="custom-container flex flex-col justify-center items-center gap-20">
@@ -138,29 +139,7 @@ export default function Home() {
           Get 50% off the first three classes you sign up for this month any GYM
           membership
         </p>
-        <form className="w-full max-w-[480px] grid grid-cols-2 gap-6">
-          <input
-            type="text"
-            id="name"
-            className="bg-black p-4 border-solid border-white border-[1px] text-white placeholder-white col-span 1"
-            placeholder="Name"
-          />
-          <input
-            type="tel"
-            id="phone-number"
-            className="bg-black p-4 border-solid border-white border-[1px] text-white placeholder-white col-span-1"
-            placeholder="Phone Number"
-          />
-          <input
-            type="email"
-            id="phone-number"
-            className="bg-black p-4 border-solid border-white border-[1px] text-white placeholder-white col-span-2"
-            placeholder="Email"
-          />
-          <button className="py-4 w-[180px] border-solid border-[#ff0000] border-[1px] text-[#ff0000]">
-            Join Now
-          </button>
-        </form>
+        <MemberForm />
       </section>
     </>
   );

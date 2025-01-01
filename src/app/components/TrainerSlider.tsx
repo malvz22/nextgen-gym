@@ -57,7 +57,7 @@ export default function TrainerSlider() {
     ],
   };
   return (
-    <div className="w-full max-w-full ">
+    <div className="w-full max-w-full">
       <Slider {...settings}>
         {trainers.map((trainer, index) => (
           <div key={index} className="flex justify-center items-center px-4">

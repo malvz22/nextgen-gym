@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-export default function Navbar() {
+const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,6 +21,20 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // const handleScroll = (
+  //   e: React.MouseEvent<HTMLAnchorElement>,
+  //   targetId: string
+  // ) => {
+  //   e.preventDefault();
+  //   const targetElement = document.getElementById(targetId);
+  //   if (targetElement) {
+  //     targetElement.scrollIntoView({
+  //       behavior: "smooth",
+  //       block: "start",
+  //     });
+  //   }
+  // };
+
   return (
     <>
       <div
@@ -34,7 +48,7 @@ export default function Navbar() {
           </h1>
           {/* Desktop Menu */}
           <div className="hidden lg:flex flex-row gap-10 text-[21px] text-white">
-            <Link href="#">
+            <Link href="#hero-section">
               <h1 className="hover:text-[#ff0000] transition-all duration-900">
                 HOME
               </h1>
@@ -103,4 +117,6 @@ export default function Navbar() {
       </div>
     </>
   );
-}
+};
+
+export default Navbar;

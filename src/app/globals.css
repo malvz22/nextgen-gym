@@ -6,6 +6,9 @@
   --background: #121212;
   --foreground: #f1f1f1;
 }
+html {
+  scroll-behavior: smooth !important;
+}
 
 body {
   color: var(--foreground);
