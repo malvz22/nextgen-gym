@@ -132,10 +132,10 @@ export default function Home() {
         id="register-section"
         className="custom-container flex flex-col justify-center items-center text-center"
       >
-        <h1 className="text-[91px] leading-[96px]">
+        <h1 className="text-[91px] leading-[96px] mb-4">
           LET'S START GYM <span>TRAINING NOW</span>
         </h1>
-        <p>
+        <p className="mb-12">
           Get 50% off the first three classes you sign up for this month any GYM
           membership
         </p>
