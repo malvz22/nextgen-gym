@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((isOpen) => !isOpen);
   };
 
   useEffect(() => {
@@ -43,9 +43,12 @@ const Navbar: React.FC = () => {
         }`}
       >
         <div className="w-full max-w-[1240px] mx-auto flex flex-row justify-between items-center">
-          <h1 className="text-[32px]">
-            NEXTGEN<span>GYM</span>
-          </h1>
+          <Link href={"#"}>
+            <h1 className="text-[32px]">
+              NEXTGEN<span>GYM</span>
+            </h1>
+          </Link>
+
           {/* Desktop Menu */}
           <div className="hidden lg:flex flex-row gap-10 text-[21px] text-white">
             <Link href="#hero-section">
@@ -84,7 +87,7 @@ const Navbar: React.FC = () => {
         <div
           className={
             isOpen
-              ? "flex flex-col w-full max-w-full text-center lg-hidden animate-slide-in-bottom"
+              ? "flex flex-col w-full max-w-full text-center lg:hidden animate-slide-in-bottom"
               : "hidden"
           }
         >

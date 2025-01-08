@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       animation: {
-        "slide-in": "slideIn 800ms ease-out",
+        "slide-in": "slideIn 800ms ease-out forwards",
         "slide-in-bottom": "slideInBottom 800ms ease-out",
         "slide-in-top": "slideInTop 800ms ease-out",
         "fade-in": "fadeIn 1s ease-in-out",
@@ -28,7 +28,7 @@ export default {
           "100%": { transform: "translate(0)", opacity: "1" },
         },
         slideInTop: {
-          "0%": { transform: "translateY(100%)", opacity: "0" },
+          "0%": { transform: "translateY(-100%)", opacity: "0" },
           "100%": { transform: "translate(0)", opacity: "1" },
         },
         fadeIn: {
