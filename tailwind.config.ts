@@ -12,6 +12,30 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        "slide-in": "slideIn 800ms ease-out",
+        "slide-in-bottom": "slideInBottom 800ms ease-out",
+        "slide-in-top": "slideInTop 800ms ease-out",
+        "fade-in": "fadeIn 1s ease-in-out",
+      },
+      keyframes: {
+        slideIn: {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translate(0)", opacity: "1" },
+        },
+        slideInBottom: {
+          "0%": { transform: "translateY(100%)", opacity: "0" },
+          "100%": { transform: "translate(0)", opacity: "1" },
+        },
+        slideInTop: {
+          "0%": { transform: "translateY(100%)", opacity: "0" },
+          "100%": { transform: "translate(0)", opacity: "1" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
     },
   },
   plugins: [],

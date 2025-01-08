@@ -94,8 +94,6 @@ export default function Home() {
                 alt="Experience"
                 className="z-50"
               />
-              <div className="absolute w-[330px] h-[450px] border-solid border-2 -translate-x-1/2 -translate-y-1/2 border-white left-[35%] top-[45%]"></div>
-              <div className="absolute w-[330px] h-[450px] border-solid border-2 -translate-x-1/2 -translate-y-1/2 border-red-700 left-[65%] top-[60%]"></div>
             </div>
           </div>
         </div>

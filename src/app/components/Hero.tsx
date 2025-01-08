@@ -7,10 +7,10 @@ export default function Hero() {
         <div className="lg:bg-gradient-to-r bg-gradient-to-b from-black/60 to-black/20 mix-blend-normal w-full max-w-full h-full flex justify-center items-center px-24">
           <div className="w-full max-w-[1240px] mx-auto flex lg:justify-start justify-center items-center">
             <div className="flex flex-col w-full max-w-[600px] lg:px-0 justify-center items-center lg:justify-start lg:items-start text-center lg:text-start">
-              <h1 className="text-[70px] md:text-[122px] md:leading-[136px]">
+              <h1 className="text-[70px] md:text-[122px] md:leading-[136px] animate-slide-in">
                 READY TO TRAIN <span>YOUR BODY</span>
               </h1>
-              <p className="mb-14">
+              <p className="mb-14 animate-fade-in">
                 Gym training is a structured and disciplined approach to
                 physical exercise that focuses on strength, endurance and
                 overall fitness improvement.
@@ -22,21 +22,21 @@ export default function Hero() {
               </Link>
 
               <div className="flex flex-row gap-10">
-                <div className="flex flex-col justify-center items-center gap-5">
+                <div className="flex flex-col justify-center items-center gap-5 animate-slide-in-bottom">
                   <h1 className="text-[50px]">
                     <span>20+</span>
                   </h1>
                   <p>Years of Experience</p>
                 </div>
                 <div className="border-solid border-l-2 "></div>
-                <div className="flex flex-col justify-center items-center gap-5">
+                <div className="flex flex-col justify-center items-center gap-5 animate-slide-in-bottom">
                   <h1 className="text-[50px]">
                     <span>15K+</span>
                   </h1>
                   <p>Members Join</p>
                 </div>
                 <div className="border-solid border-l-2 "></div>
-                <div className="flex flex-col justify-center items-center gap-5">
+                <div className="flex flex-col justify-center items-center gap-5 animate-slide-in-bottom">
                   <h1 className="text-[50px]">
                     <span>14K+</span>
                   </h1>

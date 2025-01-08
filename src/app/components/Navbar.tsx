@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       <div
-        className={`flex flex-col w-full max-w-[full] justify-center items-center px-24 py-5 fixed top-0 z-[100] transition-colors duration-700 ${
+        className={`flex flex-col w-full max-w-[full] justify-center items-center px-24 py-5 fixed top-0 z-[100] transition-colors duration-700 animate-fade-in ${
           scrolled ? "bg-[#121212]" : "bg-transparent"
         }`}
       >
@@ -78,13 +78,13 @@ const Navbar: React.FC = () => {
           <RxHamburgerMenu
             onClick={handleOpen}
             size={30}
-            className="lg:hidden"
+            className="lg:hidden cursor-pointer"
           />
         </div>
         <div
           className={
             isOpen
-              ? "flex flex-col w-full max-w-full text-center lg-hidden"
+              ? "flex flex-col w-full max-w-full text-center lg-hidden animate-slide-in-bottom"
               : "hidden"
           }
         >
