@@ -20,7 +20,7 @@ p {
   @apply text-[16px];
 }
 
-h1,
+h1, h2,
 button {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -28,12 +28,16 @@ button {
   @apply text-white;
 }
 
+h1 {
+  @apply text-[64px] md:text-[91px] text-center
+}
+
 h1 span {
   @apply text-[#FF0000];
 }
 
 .custom-container {
-  @apply w-full max-w-[1240px] mx-auto px-8 py-14;
+  @apply w-full max-w-[1240px] mx-auto px-3 md:px-8 py-14;
 }
 
 .slick-dots li {

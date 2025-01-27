@@ -7,14 +7,14 @@ export default function MemberForm() {
         <input
           type="text"
           id="name"
-          className="bg-black p-4 border-solid border-white border-[1px] text-white placeholder-white col-span 1"
+          className="bg-black p-4 border-solid border-white border-[1px] text-white placeholder-white col-span-2 md:col-span-1"
           placeholder="Name"
           required
         />
         <input
           type="tel"
           id="phone-number"
-          className="bg-black p-4 border-solid border-white border-[1px] text-white placeholder-white col-span-1"
+          className="bg-black p-4 border-solid border-white border-[1px] text-white placeholder-white col-span-2 md:col-span-1"
           placeholder="Phone Number"
           required
         />
@@ -25,7 +25,7 @@ export default function MemberForm() {
           placeholder="Email"
           required
         />
-        <button className="py-4 w-[180px] border-solid border-[#ff0000] border-[1px] text-[#ff0000]">
+        <button className="py-4 w-full md:w-[180px] border-solid border-[#ff0000] border-[1px] text-[#ff0000]">
           Join Now
         </button>
       </form>

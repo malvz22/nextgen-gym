@@ -8,26 +8,26 @@ export default function Footer() {
           <h1 className="text-[32px]">
             NEXTGEN<span>GYM</span>
           </h1>
-          <div className="flex flex-row gap-10 text-[21px] text-white">
+          <div className="flex flex-col md:flex-row gap-5 sm:gap-10 text-[21px] text-white text-center">
             <Link href="#">
-              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+              <h2 className="hover:text-[#ff0000] transition-all duration-900">
                 HOME
-              </h1>
+              </h2>
             </Link>
             <Link href={"#service-section"}>
-              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+              <h2 className="hover:text-[#ff0000] transition-all duration-900">
                 SERVICE
-              </h1>
+              </h2>
             </Link>
             <Link href={"#trainers-section"}>
-              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+              <h2 className="hover:text-[#ff0000] transition-all duration-900">
                 TRAINERS
-              </h1>
+              </h2>
             </Link>
             <Link href={"#testimony-section"}>
-              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+              <h2 className="hover:text-[#ff0000] transition-all duration-900">
                 TESTIMONIAL
-              </h1>
+              </h2>
             </Link>
           </div>
         </div>

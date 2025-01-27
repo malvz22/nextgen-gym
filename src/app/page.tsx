@@ -15,7 +15,7 @@ export default function Home() {
         id="service-section"
         className="custom-container flex flex-col justify-center items-center scroll-mt-[88px]"
       >
-        <h1 className="text-[91px]">
+        <h1 className="">
           WHY <span>CHOOSE US</span>
         </h1>
         <p className="w-full max-w-[570px] text-center mb-20">
@@ -69,7 +69,7 @@ export default function Home() {
         <div className="bg-black/85 mix-blend-normal">
           <div className="custom-container flex flex-col-reverse lg:flex-row justify-between items-center gap-20">
             <div className="flex flex-col justify-start text-center lg:text-start w-full max-w-[600px]">
-              <h1 className="text-[91px] leading-[96px] pb-8">
+              <h1 className="leading-[96px] pb-8">
                 WE HAVE A LOT OF <span>EXPERIENCE</span>
               </h1>
               <p className="pb-8">
@@ -86,7 +86,7 @@ export default function Home() {
                 a healthier, stronger future.
               </p>
             </div>
-            <div className="relative w-[330px] h-[450px] ">
+            <div className="relative w-full max-w-[330px] h-[450px] ">
               <Image
                 src={"/gym-experience.jpg"}
                 fill
@@ -102,7 +102,7 @@ export default function Home() {
         id="trainers-section"
         className="custom-container flex flex-col justify-center items-center text-center scroll-mt-[87px]"
       >
-        <h1 className="text-[91px] leading-[96px] pb-8">
+        <h1 className="md:leading-[96px] pb-8">
           OUR PROFESSIONAL <span>TRAINERS</span>
         </h1>
         <p className="w-full max-w-[570px] text-center mb-20">
@@ -119,7 +119,7 @@ export default function Home() {
       >
         <div className="bg-black/90 mix-blend-normal">
           <div className="custom-container flex flex-col justify-center items-center gap-20">
-            <h1 className="text-[91px] leading-[96px] pb-8 text-center">
+            <h1 className="md:leading-[96px] pb-8 text-center">
               REAL <span>STORIES</span>, REAL <span>RESULTS</span>
             </h1>
             <TestimonySlider />
@@ -130,7 +130,7 @@ export default function Home() {
         id="register-section"
         className="custom-container flex flex-col justify-center items-center text-center"
       >
-        <h1 className="text-[91px] leading-[96px] mb-4">
+        <h1 className="md:leading-[96px] mb-4">
           LET'S START GYM <span>TRAINING NOW</span>
         </h1>
         <p className="mb-12">

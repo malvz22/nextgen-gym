@@ -95,7 +95,7 @@ export default function TestimonySlider() {
         {testimonies.map((testimony, index) => (
           <div
             key={index}
-            className="flex flex-col w-full max-w-full text-center justify-center items-center px-36 py-10"
+            className="flex flex-col w-full max-w-full text-center justify-center items-center px-0 md:px-36 py-10"
           >
             <p className="mb-8">&quot;{testimony.testimony}&quot;</p>
             <Image

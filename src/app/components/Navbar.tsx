@@ -38,13 +38,13 @@ const Navbar: React.FC = () => {
   return (
     <>
       <div
-        className={`flex flex-col w-full max-w-[full] justify-center items-center px-24 py-5 fixed top-0 z-[100] transition-colors duration-700 animate-fade-in ${
+        className={`flex flex-col w-full max-w-[full] justify-center items-center px-3 md:px-24 py-5 fixed top-0 z-[100] transition-colors duration-700 animate-fade-in ${
           scrolled ? "bg-[#121212]" : "bg-transparent"
         }`}
       >
         <div className="w-full max-w-[1240px] mx-auto flex flex-row justify-between items-center">
           <Link href={"#"}>
-            <h1 className="text-[32px]">
+            <h1 className="text-[32px] leading-none">
               NEXTGEN<span>GYM</span>
             </h1>
           </Link>
@@ -52,24 +52,24 @@ const Navbar: React.FC = () => {
           {/* Desktop Menu */}
           <div className="hidden lg:flex flex-row gap-10 text-[21px] text-white">
             <Link href="#hero-section">
-              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+              <h2 className="hover:text-[#ff0000] transition-all duration-900">
                 HOME
-              </h1>
+              </h2>
             </Link>
             <Link href={"#service-section"}>
-              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+              <h2 className="hover:text-[#ff0000] transition-all duration-900">
                 SERVICE
-              </h1>
+              </h2>
             </Link>
             <Link href={"#trainers-section"}>
-              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+              <h2 className="hover:text-[#ff0000] transition-all duration-900">
                 TRAINERS
-              </h1>
+              </h2>
             </Link>
             <Link href={"#testimony-section"}>
-              <h1 className="hover:text-[#ff0000] transition-all duration-900">
+              <h2 className="hover:text-[#ff0000] transition-all duration-900">
                 TESTIMONIAL
-              </h1>
+              </h2>
             </Link>
           </div>
           <Link href={"#register-section"}>
@@ -87,34 +87,34 @@ const Navbar: React.FC = () => {
         <div
           className={
             isOpen
-              ? "flex flex-col w-full max-w-full text-center lg:hidden animate-slide-in-bottom"
+              ? "flex flex-col w-full max-w-full text-center gap-5 lg:hidden animate-slide-in-bottom"
               : "hidden"
           }
         >
           <Link href="#">
-            <h1 className="hover:text-[#ff0000] transition-all duration-900">
+            <h2 className="hover:text-[#ff0000] transition-all duration-900">
               HOME
-            </h1>
+            </h2>
           </Link>
           <Link href={"#service-section"}>
-            <h1 className="hover:text-[#ff0000] transition-all duration-900">
+            <h2 className="hover:text-[#ff0000] transition-all duration-900">
               SERVICE
-            </h1>
+            </h2>
           </Link>
           <Link href={"#trainers-section"}>
-            <h1 className="hover:text-[#ff0000] transition-all duration-900">
+            <h2 className="hover:text-[#ff0000] transition-all duration-900">
               TRAINERS
-            </h1>
+            </h2>
           </Link>
           <Link href={"#testimony-section"}>
-            <h1 className="hover:text-[#ff0000] transition-all duration-900">
+            <h2 className="hover:text-[#ff0000] transition-all duration-900">
               TESTIMONIAL
-            </h1>
+            </h2>
           </Link>
           <Link href={"#register-section"}>
-            <h1 className="hover:text-[#ff0000] transition-all duration-900">
+            <h2 className="hover:text-[#ff0000] transition-all duration-900">
               START NOW
-            </h1>
+            </h2>
           </Link>
         </div>
       </div>

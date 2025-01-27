@@ -60,7 +60,10 @@ export default function TrainerSlider() {
     <div className="w-full max-w-full">
       <Slider {...settings}>
         {trainers.map((trainer, index) => (
-          <div key={index} className="flex justify-center items-center px-4">
+          <div
+            key={index}
+            className="flex justify-center items-center px-0 md:px-4"
+          >
             <div
               className={`w-full max-w-full h-[450px] border-solid border-[#ff0000] border relative overflow-hidden`}
             >
