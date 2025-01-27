@@ -90,7 +90,7 @@ export default function Home() {
               <Image
                 src={"/gym-experience.jpg"}
                 fill
-                objectFit="contain"
+                style={{ objectFit: "contain" }}
                 alt="Experience"
                 className="z-50"
               />

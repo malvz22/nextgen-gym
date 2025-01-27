@@ -29,7 +29,7 @@ button {
 }
 
 h1 {
-  @apply text-[64px] md:text-[91px] text-center
+  @apply text-[64px] md:text-[91px]
 }
 
 h1 span {

@@ -71,7 +71,7 @@ export default function TrainerSlider() {
                 src={`/trainer/${trainer.imageSrc}`}
                 fill
                 alt="test"
-                objectFit="cover"
+                style={{ objectFit: "cover" }}
               />
               <div className="absolute bottom-0 left-0 flex flex-col bg-black/60 justify-center items-center w-full max-w-full py-4">
                 <h1 className="text-[38px]">{trainer.name}</h1>

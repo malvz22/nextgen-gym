@@ -110,7 +110,7 @@ export default function TestimonySlider() {
               <Image
                 src={`/testimony/${testimony.imageSrc}`}
                 fill
-                objectFit="cover"
+                style={{ objectFit: "cover" }}
                 alt="testimony"
               />
             </div>
